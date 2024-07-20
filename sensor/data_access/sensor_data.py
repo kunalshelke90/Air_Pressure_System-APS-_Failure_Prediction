@@ -18,7 +18,7 @@ class SensorData:
             raise Sensor_Exception(e,sys)
         
         
-    def save_cdv_file(self,file_path,collection_name:str,database_name:Optional[str]=None):
+    def save_csv_file(self,file_path,collection_name:str,database_name:Optional[str]=None):
         
         try:
             
