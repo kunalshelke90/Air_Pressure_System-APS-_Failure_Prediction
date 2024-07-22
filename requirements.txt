@@ -8,5 +8,7 @@ dill
 scipy
 scikit-learn==1.0.2 
 imbalanced-learn==0.8.1
+xgboost==1.6.2
 
--e .  #editable mode
+-e .  #editable mode # this updates setup file that this package is updated/ gets run 
+# because of which we dont need to run setup file again along with requiments.txt it automatically does it

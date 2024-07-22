@@ -57,3 +57,14 @@ def save_object(file_path:str,obj:object)->None:
         raise Sensor_Exception (e,sys)
 
     
+def load_object(file_path:str)->object:
+    try:
+        if not os.path.exists(file_path):
+            raise Exception (f"The file {file_path} is not exits")
+        with open(file_path,"rb") as file_obj:
+            return dill.load(file_obj)
+    except Exception as e:
+        raise Sensor_Exception(e,sys)
+
+
+        
