@@ -23,7 +23,7 @@ class SensorModel:
         except Exception as e:
             raise e
         
-    def predict(self):
+    def predict(self,x):
         try:
             X_transform=self.preprocessor.transform(x)
             y_hat=self.model.predict(X_transform)
