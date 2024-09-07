@@ -48,8 +48,9 @@ Create a virtual environment and install dependencies:
 ```
 ```bash
     pip install -r requirements.txt
-```## Usage
-1. Start the Flask application:
+```
+## Usage
+1. Start the Fast API application:
 
 ```bash
     python main.py
